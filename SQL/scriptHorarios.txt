@@ -1,0 +1,33 @@
+DROP DATABASE IF EXISTS horarios;
+
+CREATE DATABASE horarios
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Spanish_Spain.1252'
+    LC_CTYPE = 'Spanish_Spain.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+    
+CREATE TABLE horario(id int primary key not null,fecha varchar(50),horaEntrada varchar (50),horaSalida varchar(50),horasTrabajadas varchar(50),idEmpleado int);
+
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('1','23/6/2022', '08:00:00', '18:00:15','10:00:15','1');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('2','23/6/2022', '08:00:00', '18:00:15','10:00:15','2');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('3','23/6/2022', '08:00:00', '18:00:15','10:00:15','3');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('4','23/6/2022', '08:00:00', '18:00:15','10:00:15','4');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('5','23/6/2022', '08:00:00', '18:00:15','10:00:15','5');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('6','23/6/2022', '08:00:00', '18:00:15','10:00:15','6');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('7','23/6/2022', '08:00:00', '18:00:15','10:00:15','7');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('8','23/6/2022', '08:00:00', '18:00:15','10:00:15','8');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('9','23/6/2022', '08:00:00', '18:00:15','10:00:15','9');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('10','24/6/2022', '08:00:00', '18:00:15','10:00:15','1');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('11','24/6/2022', '08:00:00', '18:00:15','10:00:15','2');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('12','24/6/2022', '08:00:00', '18:00:15','10:00:15','3');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('13','24/6/2022', '08:00:00', '18:00:15','10:00:15','4');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('14','24/6/2022', '08:00:00', '18:00:15','10:00:15','5');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('15','24/6/2022', '08:00:00', '18:00:15','10:00:15','6');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('16','24/6/2022', '08:00:00', '18:00:15','10:00:15','7');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('17','24/6/2022', '08:00:00', '18:00:15','10:00:15','8');
+INSERT INTO horario(id,fecha,horaEntrada,horaSalida,horasTrabajadas,idEmpleado) VALUES ('18','24/6/2022', '08:00:00', '18:00:15','10:00:15','9');
+
+

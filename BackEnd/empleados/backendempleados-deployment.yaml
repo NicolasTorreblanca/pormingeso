@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backendempleados-deployment
+  labels:
+    app: backendempleados
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backendempleados
+  template:
+    metadata:
+      labels:
+        app: backendempleados
+    spec:
+      containers:
+        - name: backendempleados
+          image: nicolastorreblanca/backendempleados
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8090

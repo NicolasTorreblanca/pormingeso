@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backendhorarios-deployment
+  labels:
+    app: backendhorarios
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backendhorarios
+  template:
+    metadata:
+      labels:
+        app: backendhorarios
+    spec:
+      containers:
+        - name: backendhorarios
+          image: nicolastorreblanca/backendhorarios
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8091

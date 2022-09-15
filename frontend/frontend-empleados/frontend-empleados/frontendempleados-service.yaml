@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontendempleados-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: frontendempleados
+  ports:
+    - name: http
+      protocol: TCP
+      nodePort: 32001
+      port: 3001
+      targetPort: 3001

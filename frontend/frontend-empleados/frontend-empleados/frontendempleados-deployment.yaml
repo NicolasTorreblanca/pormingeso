@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontendempleados-deployment
+  labels:
+    app: frontendempleados
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontendempleados
+  template:
+    metadata:
+      labels:
+        app: frontendempleados
+    spec:
+      containers:
+      - name: frontendempleados
+        image: nicolastorreblanca/frontendempleados
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 3001

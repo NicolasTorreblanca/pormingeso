@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontendhorarios-deployment
+  labels:
+    app: frontendhorarios
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontendhorarios
+  template:
+    metadata:
+      labels:
+        app: frontendhorarios
+    spec:
+      containers:
+      - name: frontendhorarios
+        image: nicolastorreblanca/frontendhorarios
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 3000
